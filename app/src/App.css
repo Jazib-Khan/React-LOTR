@@ -5,6 +5,13 @@
   position: relative;
 }
 
+.bg-image {
+  object-fit: contain;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 header {
   display: flex;
   padding: 10px;
@@ -18,7 +25,8 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 footer {
@@ -26,3 +34,4 @@ footer {
   display: grid;
   place-items: center;
 }
+

@@ -7,14 +7,14 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='App-header'>
+      <header>
           Header
       </header>
       <main>
-        <img src="" />
+        <img src="/landscape.jpg" alt="lotr-background-img" className="bg-image" />
         <Dashboard />
       </main>
-      <footer>Footer</footer>
+      {/* <footer>Footer</footer> */}
     </div>
   )
 }
