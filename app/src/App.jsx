@@ -7,9 +7,9 @@ function App() {
 
   return (
     <div className='App'>
-      <header>
+      {/* <header>
           Header
-      </header>
+      </header> */}
       <main>
         <img src="/landscape.jpg" alt="lotr-background-img" className="bg-image" />
         <Dashboard />

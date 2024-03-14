@@ -14,13 +14,13 @@ export default function Options(props) {
     console.log('SELECTION: ', selection)
     
     return (
-        <>
+        <div>
             {questions.map((question, index) => {
                 return (
                     <button onClick={setSelection(question)} 
                     className={`${styles.button} ${question === selection ? styles.selectedButton : styles.nonSelectedButton}`} key={index}>{question}</button>
                 )
             })}
-        </>
+        </div>
     )
 }

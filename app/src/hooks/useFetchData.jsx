@@ -20,13 +20,14 @@ export default function useFetchData(selection) {
         if(!selection) {
             return
         }
+        setLoading(true)
         async function fetchData() {
             const url = apiUrl + '/' + selection
             try {
                 const res = await fetch(url, options)
                 const jsonData = await res.json()
                 console.log('DATA: ', jsonData)
-                setData(data)
+                setData(jsonData)
             } catch(err) {
                 setError(err.message)
             } finally {
