@@ -28,7 +28,7 @@ export default function Dashboard() {
     return (
         <div className={styles.dashboard}>
             <div className={styles.layout}>
-                <h1>LOTR INFO</h1>
+                <h1 style={{margin: '0 auto'}}>LOTR INFO</h1>
                 <Options selection={selection} setSelection=
                 {onClickHandler} />
                 {loading && (
